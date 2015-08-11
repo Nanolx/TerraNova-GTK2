@@ -1,0 +1,666 @@
+
+# List of valid icon-sizes
+# GTK_ICON_SIZE_
+#		INVALID
+#		MENU
+#		SMALL_TOOLBAR
+#		LARGE_TOOLBAR
+#		BUTTON
+#		DND
+#		DIALOG
+
+# List of valid relief-styles
+# GTK_RELIEF_
+#		NORMAL
+#		HALF
+#		NONE
+
+# List of valid shadow-types
+# GTK_SHADOW_
+#		NONE
+#		IN
+#		OUT
+#		ETCHED_IN
+#		ETCHED_OUT
+
+# List of valid toolbar-styles
+# GTK_TOOLBAR_
+#		ICONS
+#		TEXT
+#		BOTH
+#		BOTH_HORIZ
+
+# List of valid treeview-grid-line-styles
+# GTK_TREE_VIEW_GRID_LINES_
+#				NONE
+#				HORIZONTAL
+#				VERTICAL
+#				BOTH
+
+# List of valid toolbar-spacer-styles
+# GTK_TOOLBAR_SPACE_
+#                       EMPTY
+#                       LINE
+
+# Default Colors
+gtk-color-scheme = "base_color:#656565\
+fg_color:#D4D4D4\
+tooltip_fg_color:#000000\
+selected_bg_color:#0500B7\
+selected_fg_color:#ffffff\
+text_color:#D4D4D4\
+bg_color:#4E4E4E\
+tooltip_bg_color:#FFFFBF\
+odd_color:#E6E6E6\
+even_color:#FFFFFF\
+cursor_color:#26B351\
+secondary_cursor_color:#FFDC38\
+link_color:#5FBBFF\
+active_link_color:#F4FF00\
+visited_link_color:#FF00AC\
+error_underline_color:#F5522A\
+iconview_selection_box_color:#FFDF48\
+spell_error_color:#FBB830\
+galeon_secure_color:#2BA731\
+aisleriot_selection_color:#35B7F6\
+current_match_color:#F7BE1A\
+all_matches_color:#798FE4\
+ephy_secure_bg_color:#64B728\
+ephy_secure_fg_color:#ECF1E9\
+nautilus_selection_box_color:#FFFFFF\
+nautilus_dark_info_color:#000000\
+nautilus_light_info_color:#FFFFFF\
+nautilus_icon_prelight_color:#38C3FE\
+cited_color:#00B9FF"
+
+# Icon Sizes
+gtk-icon-sizes = "panel=16,16 :\
+gtk-menu=16,16 :\
+gtk-button=16,16 :\
+gtk-small-toolbar=16,16 :\
+gtk-large-toolbar=22,22 :\
+gtk-dialog=22,22 :\
+gtk-dnd=16,16 :\
+panel-menu=22,22"
+
+# Misc Settings
+gtk-menu-popup-delay=0
+gtk-label-select-on-focus=0
+gtk-menu-bar-popup-delay=0
+gtk-menu-images=0
+gtk-menu-popdown-delay=0
+gtk-recent-files-limit=10
+gtk-recent-files-max-age=2
+gtk-scrolled-window-placement=GTK_CORNER_TOP_RIGHT
+gtk-timeout-expand=0
+gtk-timeout-initial=0
+gtk-timeout-repeat=10
+gtk-toolbar-style=GTK_TOOLBAR_ICONS
+gtk-toolbar-icon-size=GTK_ICON_SIZE_SMALL_TOOLBAR
+gtk-tooltip-browse-mode-timeout=0
+gtk-tooltip-browse-timeout=0
+gtk-tooltip-timeout=250
+gtk-dnd-drag-threshold=4
+gtk-double-click-distance=8
+gtk-double-click-time=250
+gtk-enable-accels=1
+gtk-enable-animation=1
+gtk-enable-mnemonics=0
+gtk-enable-tooltips=1
+gtk-error-bell=0
+gtk-toolbar-style=0
+gtk-button-images=0
+
+style "terranova-default"
+{
+
+  # == BonoboUiToolbar ==
+  BonoboUiToolbar::shadow_type = GTK_SHADOW_OUT
+
+  # == EelAlertDialog ==
+  EelAlertDialog::alert_border = 3
+
+  # == EphyLocationEntry ==
+  EphyLocationEntry::secure-bg-color = @ephy_secure_bg_color
+  EphyLocationEntry::secure-fg-color = @ephy_secure_fg_color
+
+  # == EggFindBar ==
+  EggFindBar::all_matches_color = @all_matches_color
+  EggFindBar::current_match_color = @current_match_color
+
+  # == EExpander ==
+  EExpander::expander-size = 4
+  EExpander::expander-spacing = 2
+
+  # == ETree ==
+  ETree::expander_size = 4
+  ETree::retro_look = 1
+
+  # == GdmUserMenuItem ==
+  GdmUserMenuItem::indicator-size = 10
+  GdmUserMenuItem::indicator-spacing = 2
+
+  # == GimpColorNotebook ==
+  GimpColorNotebook::tab-border = 0
+  GimpColorNotebook::tab-icon-size = GTK_ICON_SIZE_SMALL_TOOLBAR
+
+  # == GimpDataEditor ==
+  GimpDataEditor::minimal-height = 50
+
+  # == GimpDock ==
+  GimpDock::default-height = 175
+
+  # == GimpDockSeparator ==
+  GimpDockSeparator::height = 4
+
+  # == GimpDockable ==
+  GimpDockable::content-border = 0
+
+  # == GimpDocbook ==
+  GimpDocbook::tab-border = 0
+  GimpDocbook::tab-icon-size = GTK_ICON_SIZE_SMALL_TOOLBAR
+
+  # == GimpEditor ==
+  GimpEditor::button-icon-size = GTK_ICON_SIZE_SMALL_TOOLBAR
+  GimpEditor::button-relief = GTK_RELIEF_NONE
+  GimpEditor::button-spacing = 1
+  GimpEditor::content-spacing = 1
+
+  # == GimpFrame ==
+  GimpFrame::label-bold = TRUE
+  GimpFrame::label-spacing = 2
+
+  # == GimpMenuDock ==
+  GimpMenuDock::menu-preview-size = GTK_ICON_SIZE_SMALL_TOOLBAR
+  GimpMenuDock::minimal-width = 150
+
+  # == GimpPreview ==
+  GimpPreview::size = 400
+
+  # == GimpScaleComboBox ==
+  GimpScaleComboBox::label-scale = 0
+
+  # == GimpToolbox ==
+  GimpToolbox::button-relief = GTK_RELIEF_NONE
+  GimpToolbox::tool-icon-size = GTK_ICON_SIZE_SMALL_TOOLBAR
+
+  # == GimpUnitComboBox ==
+  GimpUnitComboBox::label-scale = 0
+
+  # == AisleriotBoard ==
+  AisleriotBoard::selection-color = @aisleriot_selection_color
+
+  # == GaleonLocationEntry ==
+  GaleonLocationEntry::secure-color = @galeon_secure_color
+
+  # == GamesFrame ==
+  GamesFrame::label-bold = TRUE
+  GamesFrame::label-spacing = 2
+
+  # == GnomeHref ==
+  GnomeHref::link_color = @link_color
+
+  # == GtkArrow ==
+  GtkArrow::arrow-scaling = 1.0
+
+  # == GtkAssistant ==
+  GtkAssistant::content-padding = 0
+  GtkAssistant::header-padding = 4
+
+  # == GtkButton ==
+  GtkButton::child-displacement-y = 0
+  GtkButton::child-displacement-y = 0
+  GtkButton::default-border = { 0, 0, 0, 0 }
+  GtkButton::default-outside-border = { 0, 0, 0, 0 }
+  GtkButton::displace-focus = 0
+  GtkButton::image-spacing = 1
+  GtkButton::inner-border = { 0, 0, 0, 0 }
+
+  # == GtkButtonBox ==
+  GtkButtonBox::child-internal-pad-x = 1
+  GtkButtonBox::child-internal-pad-y = 1
+  GtkButtonBox::child-min-height = 20
+  GtkButtonBox::child-min-width = 20
+
+  # == GtkCheckButton ==
+  GtkCheckButton::indicator-size = 13
+  GtkCheckButton::indicator-spacing = 2
+
+  # == GtkCheckMenuItem ==
+  GtkCheckMenuItem::indicator-size = 12
+
+  # == GtkComboBox ==
+  GtkComboBox::appears-as-list = 0
+  GtkComboBox::arrow-size = 16
+  GtkComboBox::shadow-type = GTK_SHADOW_NONE
+
+  # == GtkContainer ==
+  GtkContainer::border-with = 0
+
+  # == GtkDialog ==
+  GtkDialog::action-area-border = 2
+  GtkDialog::button-spacing = 2
+  GtkDialog::content-area-border = 2
+
+  # == GtkEntry ==
+  GtkEntry::inner-border = { 0, 0, 0, 0 }
+  GtkEntry::cursor_color = @cursor_color
+
+  # == GtkExpander ==
+  GtkExpander::expander-size = 10
+  GtkExpander::expander-spacing = 2
+
+  # == GtkHTML ==
+  GtkHTML::spell_error_color = @spell_error_color
+  GtkHTML::alink-color = @active_link_color
+  GtkHTML::cited-color = @cited_color
+  GtkHTML::link-color = @link_color
+  GtkHTML::vlink_color = @visited_link_color
+
+  # == GtkIconView ==
+  GtkIconView::selection-box-alpha = 0x40
+  GtkIconView::selection-box-color = @iconview_selection_box_color
+
+  # == GtkMenu ==
+  GtkMenu::double-arrows = 0
+  GtkMenu::horizontal-offset = -1
+  GtkMenu::horizontal-padding = 0
+  GtkMenu::vertical-offset = 0
+  GtkMenu::vertical-padding = 0
+
+  # == GtkMenuBar ==
+  GtkMenuBar::internal-padding = 0
+  GtkMenuBar::shadow-type = GTK_SHADOW_OUT
+
+  # == GtkMenuItem ==
+  GtkMenuItem::arrow-scaling = 1.0
+  GtkMenuItem::arrow-spacing = 2
+  GtkMenuItem::horizontal-padding = 2
+  GtkMenuItem::selected-shadow-type = GTK_SHADOW_NONE
+  GtkMenuItem::toggle-spacing = 2
+  GtkMenuItem::width-chars = 6
+
+  # == GtkMessageDialog ==
+  GtkMessageDialog::message-border = 4
+  GtkMessageDialog::use-separator = 0
+
+  # == GtkNotebook ==
+  GtkNotebook::arrow-spacing = 0
+  GtkNotebook::has-backward-stepper = 0
+  GtkNotebook::has-forward-stepper = 0
+  GtkNotebook::has-secondary-backward-stepper = 0
+  GtkNotebook::has-secondary-forward-stepper = 0
+  GtkNotebook::tab-curvature = 0
+  GtkNotebook::tab-overlap = 3
+  GtkNotebook::tab-border = 0
+  GtkNotebook::tab-hborder = 0
+  GtkNotebook::tab-vborder = 0
+  GtkNotebook::show-border = 0
+  GtkNotebook::gtk-button-images = 0
+  GtkNotebook::gtk-menu-images = 0
+
+  # == GtkOptionMenu ==
+  GtkOptionMenu::indicator-size = { 7, 13 }
+  GtkOptionMenu::indicator-spacing = { 7, 5, 2, 2 }
+
+  # == GtkPaned ==
+  GtkPaned::handle-size = 4
+
+  # == GtkProgressBar ==
+  GtkProgressBar::min-horizontal-bar-height = 18
+  GtkProgressBar::min-horizontal-bar-width = 50
+  GtkProgressBar::min-vertical-bar-height = 50
+  GtkProgressBar::min-vertical-bar-width = 18
+  GtkProgressBar::xspacing = 0
+  GtkProgressBar::yspacing = 0
+
+  # == GtkRange ==
+  GtkRange::activate-slider = 1
+  GtkRange::arrow-displacement-x = 0
+  GtkRange::arrow-displacement-y = 0
+  GtkRange::arrow-scaling = 1.0
+  GtkRange::slider-width = 12
+  GtkRange::stepper-size = 12
+  GtkRange::stepper-spacing = 0
+  GtkRange::trough-border = 0
+  GtkRange::trough-side-details = 0
+  GtkRange::trough-under-steppers = 0
+
+  # == GtkScale ==
+  GtkScale::slider-length = 30
+  GtkScale::value-spacing = 2
+
+  # == GtkScrollbar ==
+  GtkScrollbar::fixed-slider-length = 0
+  GtkScrollbar::has-backward-stepper = 1
+  GtkScrollbar::has-forward-stepper = 1
+  GtkScrollbar::has-secondary-backward-stepper = 0
+  GtkScrollbar::has-secondary-forward-stepper = 0
+  GtkScrollbar::min-slider-length = 25
+  GtkScrollbar::slider_width = 12
+
+  # == GtkScrolledWindow ==
+  GtkScrolledWindow::scrollbar-spacing = 0
+  GtkScrolledWindow::scrollbars-within-bevel = 0
+
+  # == GtkSpinButton ==
+  GtkSpinButton::shadow_type = GTK_SHADOW_OUT
+
+  # == GtkStatusBar ==
+  GtkStatusbar::shadow_type = GTK_SHADOW_NONE
+
+  # == GtkTextView ==
+  GtkTextView::error-underline-color = @error_underline_color
+
+  # == GtkToolButton ==
+  GtkToolButton::icon-spacing = 1
+
+  # == GtkToolbar ==
+  GtkToolbar::button-relief = GTK_RELIEF_NONE
+  GtkToolbar::internal-padding = 1
+  GtkToolbar::max-child-expand = 10000
+  GtkToolbar::shadow_type = GTK_SHADOW_OUT
+  GtkToolbar::space-size = 1
+  GtkToolbar::space-style = GTK_TOOLBAR_SPACE_EMTPY
+
+  # == GtkTreeView ==
+  GtkTreeView::allow-rules = 1
+  GtkTreeView::even-row-color = @even_color
+  GtkTreeView::expander-size = 10
+  GtkTreeView::grid-line-pattern = "\2\1\1\2"
+  GtkTreeView::grid-line-width = 1
+  GtkTreeView::horizontal-separator = 1
+  GtkTreeView::indent-expanders = 0
+  GtkTreeView::odd-row-color = @odd_color
+  GtkTreeView::row-ending-details = 0
+  GtkTreeView::tree-line-pattern = "\2\1\1\2"
+  GtkTreeView::tree-line-width = 1
+  GtkTreeView::vertical-separator = 1
+
+  # == GtkWidget ==
+  GtkWidget::cursor-aspect-ratio = 0.055
+  GtkWidget::cursor-color = @cursor_color
+  GtkWidget::draw-border = { 0, 0, 0, 0 }
+  GtkWidget::focus-line-pattern = "\1\1"
+  GtkWidget::focus-line-width = 0
+  GtkWidget::focus-padding = 0
+  GtkWidget::interior-focus = 1
+  GtkWidget::link-color = @link_color
+  GtkWidget::scroll-arrow-hlength = 12
+  GtkWidget::scroll-arrow-vlength = 12
+  GtkWidget::secondary-cursor-color = @secondary_cursor_color
+  GtkWidget::separator-height = 0
+  GtkWidget::separator-width = 0
+  GtkWidget::visited-link-color = @visited_link_color
+  GtkWidget::wide-separators = 0
+
+  # == NautilusIconContainer ==
+  NautilusIconContainer::activate_prelight_icon_label = 0
+  NautilusIconContainer::dark_info_color = @nautilus_dark_info_color
+  NautilusIconContainer::frame_text = 0
+  NautilusIconContainer::highlight_alpha = 120
+  NautilusIconContainer::light_info_color = @nautilus_light_info_color
+  NautilusIconContainer::normal_alpha = 0
+  NautilusIconContainer::normal_icon_brightness = 255
+  NautilusIconContainer::normal_icon_color = @selected_bg_color
+  NautilusIconContainer::normal_icon_lighten = 0
+  NautilusIconContainer::normal_icon_render_mode = 0
+  NautilusIconContainer::normal_icon_saturation = 255
+  NautilusIconContainer::prelight_alpha = 145
+  NautilusIconContainer::prelight_icon_brightness = 255
+  NautilusIconContainer::prelight_icon_color = @nautilus_icon_prelight_color
+  NautilusIconContainer::prelight_icon_lighten = 0
+  NautilusIconContainer::prelight_icon_render_mode = 2
+  NautilusIconContainer::prelight_icon_saturation = 255
+  NautilusIconContainer::selection_box_alpha = 127
+  NautilusIconContainer::selection_box_color = @nautilus_selection_box_color
+
+  # == WnckTasklist ==
+  WnckTasklist::fade-loop-time = 5.0
+  WnckTasklist::fade-max-loops = 7
+  WnckTasklist::fade-opacity = 0.7
+  WcnkTasklist::fade-overlay-rect = 0
+
+  # == General ==
+  xthickness = 0
+  ythickness = 0
+
+  fg[NORMAL]        = @fg_color
+  fg[PRELIGHT]      = shade (1.20, @fg_color)
+  fg[SELECTED]      = @selected_fg_color
+  fg[ACTIVE]        = shade (0.9, @fg_color)
+  fg[INSENSITIVE]   = shade (0.65, @fg_color)
+
+  bg[NORMAL]        = @bg_color
+  bg[PRELIGHT]      = shade (1.20,  @bg_color)
+  bg[SELECTED]	  = @selected_bg_color
+  bg[INSENSITIVE]   = @bg_color
+  bg[ACTIVE]        = shade (0.9, @bg_color)
+
+  base[NORMAL]      = @base_color
+  base[PRELIGHT]    = shade (1.20,  @bg_color)
+  base[ACTIVE]      = shade (0.7, @selected_bg_color)
+  base[SELECTED]    = shade (0.9, @selected_bg_color)
+  base[INSENSITIVE] = shade (0.65, @base_color)
+
+  text[NORMAL]      = @text_color
+  text[PRELIGHT]    = shade (1.20, @text_color)
+  text[ACTIVE]      = @selected_fg_color
+  text[SELECTED]    = @selected_fg_color
+  text[INSENSITIVE] = shade (0.65, @text_color)
+
+  engine "terranova"
+  {
+    style               = AQUARIUS # Widget style to use; CLARIUS, AQUARIUS or CANDY
+    animation		= TRUE # En/Disable Animations
+    contrast		= 1.0 # General Widget Contrast
+    radius		= 1.2 # General Widget Roundness
+    menubarstyle      	= 0 # Menubarstyle 0 = Glossy
+    toolbarstyle	= 0 # Toolbarstyle 0 = Glossy
+    scrollbarstyle	= 0 # Scrollbarstyle 0 = Striped; 1 = Arrowed
+    progressbarstyle	= 1 # Progressbarstyle 0 = Striped; 1 = Arrowed
+    progressbar_direction	= 1 # Animationdirection of the Progressbar 0 = left -> right; 1 = right -> left
+    random_effect       = 1 # Draw randomly generated stuff on buttons and tabs 0 = no; 1 = stripes; 2 = bubbles
+    random_opacity      = 0.2 # The Opacity of the Stripes
+    mw_gradient         = 1 # MainWindow Gradient 0 = Plain ; 1 = horizontal gradient; 2 = diagonal gradient
+    tooltip_style       = 0 # Tooltip gradient 0 = curved; 1 = none
+    grip_opacity        = 0.8 # opacity for widget-prelight effects ( value * 2 for active-widget effects)
+    grip_style          = 0 # effect on prelighted/active buttons; 0 = border; 1 = grip;  2 = both
+    grip_pos            = 2 # where to place the grip, if grip_style = 1; 0 = b-right; 1 = b-left; 2 = top-left; 3 = top-right
+    trough_visible      = 0 # scrollbar trough; 0 = invisible; 1 = normal behaviour
+    scale_trough_size   = 5 # height of the scale_trough in px
+    indicator_style     = 2 # what to draw inside the checkbox; 0 = check; 1 = plus; 2 = cross
+    trough_style        = 0 # Scrollbartroughstyle; 0 = smooth gradient; 1 = sharp gradient
+    button_effect       = 0 # what to draw on buttons; 0 = nothing; 1 = curved gradient; 2 = triangles;
+    button_gradient     = 0 # what gradient to draw on buttons; 0 = horizontal; 1 = vertical
+    slider_style        = 1 # wether to have a hilight effect on sliders; 0 = no; 1 = yes
+    draw_unselected     = 0 # wether to theme unselected cells in GtkTreeViews; 0 = no; 1 = yes
+    menuitemstyle       = 0 # Menuitemstyle 0 = plain; 1 = striped; 2 = arrowed
+  }
+}
+
+# Default Settings
+style "terranova-wide" = "terranova-default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+# Default Settings
+style "terranova-wider" = "terranova-default"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+# GtkButton() Settings
+style "terranova-button" = "terranova-wider"
+{
+}
+
+# GtkToggleButton() Settings
+style "terranova-toggle-button" = "terranova-wider"
+{
+}
+
+# GtkRadioButton() Settings
+style "terranova-indicator-radio" = "terranova-wide"
+{
+}
+
+# GtkCheckButton() Settings
+style "terranova-indicator-check" = "terranova-wide"
+{
+}
+
+# GtkNotebook() Settings
+style "terranova-notebook" = "terranova-button"
+{
+}
+
+# GtkTasklist() Settings
+style "terranova-tasklist" = "terranova-default"
+{
+  xthickness = 5
+  ythickness = 3
+}
+
+# GtkMenu() Settings
+style "terranova-menu" = "terranova-default"
+{
+  xthickness = 2
+  ythickness = 2
+  fg[PRELIGHT]  = @selected_fg_color
+}
+
+# GtkMenuBarItem() Settings
+style "terranova-menubar-item" = "terranova-button"
+{
+  fg[PRELIGHT]  = @selected_fg_color
+}
+
+# GtkMenuItem() Settings
+style "terranova-menu-item" = "terranova-default"
+{
+  xthickness = 2
+  ythickness = 3
+  fg[PRELIGHT]  = @selected_fg_color
+}
+
+# GtkTreeView(), GtkListStore() et cetera Settings
+style "terranova-tree" = "terranova-default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+# GtkFrame() Settings
+style "terranova-frame-title" = "terranova-default"
+{
+}
+
+# GtkProgressbar() Settings
+style "terranova-progressbar" = "terranova-wide"
+{
+  xthickness = 3
+  ythickness = 3
+  fg[PRELIGHT]  = @selected_fg_color
+}
+
+# GtkCombo(), GtkCombobox() et cetera Settings
+style "terranova-combo" = "terranova-button"
+{
+  engine "terranova"
+  {
+        button_effect = 0
+  }
+}
+
+# GtkMenuBar() Settings
+style "terranova-menubar" = "terranova-default"
+{
+  fg[PRELIGHT]  = @selected_fg_color
+}
+
+# GtkScale(), GtkSlider() Settings
+style "terranova-scale" = "terranova-button"
+{
+  GtkRange::trough-side-details = 1
+}
+
+# GtkScrollbar() Settings
+style "terranova-scroll" = "terranova-wider"
+{
+}
+
+# GnomePanel() Settings
+style "terranova-panel" = "terranova-wider"
+{
+}
+
+# NautilusLocationBar() Settings
+style "nautilus-location"
+{
+}
+
+style "evolution-workaround"
+{
+  engine "terranova"
+  {
+    mw_gradient = 0
+  }
+}
+
+widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "evolution-workaround"
+
+widget "*.nautilus-extra-view-widget" style:highest "nautilus-location"
+
+class "GtkProgressBar" style "terranova-progressbar"
+class "GtkWidget"    style "terranova-default"
+class "GtkButton"    style "terranova-button"
+class "GtkScale"     style "terranova-scale"
+class "GtkCombo"     style "terranova-button"
+class "GtkRange"     style "terranova-wide"
+class "GtkFrame"     style "terranova-wide"
+class "GtkSeparator" style "terranova-wide"
+class "GtkMenu"      style "terranova-menu"
+class "GtkEntry"     style "terranova-wider"
+class "GtkScrollbar" style "terranova-scroll"
+class "GtkMenuItem"  style "terranova-menu-item"
+class "GtkRadioButton" style "terranova-indicator-radio"
+class "GtkCheckButton" style "terranova-indicator-check"
+class "GtkToggleButton" style "terranova-toggle-button"
+class "GtkMenuBar" style "terranova-menubar"
+class "GtkSpinButton" style "terranova-combo"
+
+widget_class "*GtkNotebook"    style "terranova-notebook"
+widget_class "*GtkNotebook*GtkEventBox"     style "terranova-notebook"
+widget_class "*GtkNotebook*GtkDrawingArea"  style "terranova-notebook"
+widget_class "*GtkNotebook*GtkLayout"       style "terranova-notebook"
+
+widget_class "Panel*" style "terranova-panel"
+widget_class "Panel*GtkButton.*" style "terranova-panel"
+widget_class "Panel*GtkToggleButton.*" style "terranova-panel"
+widget_class "Panel*Menu.*" style "terranova-panel"
+widget_class "Panel*MenuBar.*" style "terranova-panel"
+widget_class "Panel*Applet*" style "terranova-panel"
+
+widget_class "*MenuItem*" style "terranova-menu-item"
+widget_class "*.GtkMenuBar.*MenuItem.*" style "terranova-menubar-item"
+
+widget_class "*.GtkComboBox.GtkButton" style "terranova-combo"
+widget_class "*.GtkCombo.GtkButton"    style "terranova-combo"
+widget_class "*.GtkComboBox.GtkFrame"  style "terranova-wider"
+widget_class "*.GtkComboBoxEntry*" style "terranova-combo"
+widget_class "*.GtkTool*Button*" style "terranova-combo"
+
+widget_class "*.GtkTreeView.GtkButton" style "terranova-tree"
+widget_class "*.GtkCTree.GtkButton" style "terranova-tree"
+widget_class "*.GtkList.GtkButton" style "terranova-tree"
+widget_class "*.GtkCList.GtkButton" style "terranova-tree"
+widget_class "*.GtkFrame.GtkLabel" style "terranova-frame-title"
+
+widget_class "*.GtkNotebook.*.GtkEventBox" style "terranova-notebook"
+widget_class "*.GtkNotebook.*.GtkViewport" style "terranova-notebook"
+
+include "nautilus/nautilus.rc"

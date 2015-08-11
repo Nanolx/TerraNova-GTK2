@@ -1,0 +1,8 @@
+- Modernize the Engine
+- Better Code Quality [WIP]
+- Better Code Quantity [WIP]
+- Use only params in draw.c (don't mix params and widget) [DONE]
+- Make sure Radius is always correct [WIP]
+- Fully rename from Excelsior (R.I.P) to TerraNova
+- Allow drawing Arrows/Stripes on menubaritems [DONE]
+- Give Variables better names [WIP]

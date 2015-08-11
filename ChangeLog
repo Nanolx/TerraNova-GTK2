@@ -1,0 +1,161 @@
+0.90:
+- use WidgetParameters *params rather than *widget
+- don't err on wrong radius-size (temp. fix for NNTPGrab errors)
+- fixed an implicit declaration
+- make button_gradient engine-option work in CANDY
+- moved several functions into _functions.[ch] to avoid duplicated code
+- draw tooltip background different for each style
+- remove option 2 from grip_style engine-option
+- give disabled entry/button darker colors in CANDY
+- give active entry/button the same color in CANDY
+- added prelight state to buttons in CANDY
+- added menuitemstyle engine-option (0=plain 1=diag. striped 2=arrowed 3=vert. striped)
+- renamed progbar_style engine-option to progressbarstyle
+- added progressbarstyle engine-option 2 (=vertically striped)
+- renamed progbar_to_left engine-option to progressbar_direction
+
+0.50:
+- improved active tabs look'n'feel
+- small fixup in autogen.sh
+- improved configure.ac
+- split CLARIUS and AQUARIUS
+- added CANDY (back (from Excelsior 1.x))
+- made panel-menu, dialog and large-toolbar icons 22x22
+- renamed themes:
+	- TerraNova => TerraNova-Clarius
+	- TerraNova-Midnight => TerraNova-Aquarius
+	- TerraNova-Candy (new)
+- themes support nautilus-elementarys breadcrumb pathbar
+- breadcrumb effects: active ones are blue, prelighted violett
+- scale down arrows to 60% (too big in breadcrumbs else)
+- use gtk_widget_has_default instead of GTK_WIDGET_HAS_DEFAULT
+- use gtk_widget_get_state instead of GTK_WIDGET_STATE
+- use gtk_widget_is_drawable instead of GTK_WIDGET_DRAWABLE
+- use gtk_widget_get_has_window instead of GTK_WIDGET_NO_WINDOW
+- use gtk_widget_get_visible instead of GTK_WIDGET_VISIBLE
+- use gtk_widget_has_focus instead of GTK_WIDGET_HAS_FOCUS
+- set several gtk+ settings via the theme rc files
+	- (see "Misc Settings" in the rc files)
+- added grip_pos engine option
+- added draw_unselected engine option
+- removed button_style engine option
+- added 1 option to tooltip_style option (plain tooltips)
+- fixed tooltips-rendering in Firefox
+- invert selected cells for CLARIUS
+- updated schema
+
+
+0.40:
+- make TerraNova-Midnight black/blue instead of black/green
+- fixed Textcolors in TerraNova-Midnight
+- fixed a glitch in progressbar-animation-speed
+- renamed button_style to button_effect
+- set button_effect to 0 in the default themes
+- only re-color the tip of the currently active tab
+- set trough_visible to 0 in the default themes
+- added button_gradient option
+	- what gradient to draw on buttons:
+		0 = horizontal (default/like-before)
+		1 = vertical
+- added slider_style option
+	- wether to draw an effect on highlighted sliders:
+		0 = no (engine-default/like-before)
+		1 = yes (theme-default)
+- added button_style option
+	- style of buttons:
+		0 = CLARIUS (engine-default/like-before)
+		0 = Is recommended for bright themes
+		1 = AQUATIC
+		1 = Is recommended for dark themes
+- updated the schema file
+- removed some unused code from draw_list_view_header()
+- added TODO
+
+0.30:
+
+- fixed gnomecc warning about terranova not beeing installed
+- fixed mixed values of trough_style (0 1 are now bound to correct gradients)
+- fixed active buttons beeing to dark
+- fixed random-claws not beeing drawn on active tabs
+- added button_style engine option
+	- what to draw on buttons:
+		0 = nothing (engine-default/like before)
+		1 = curved gradient
+		2 = checks on the bottom-left and the upper-right corner
+		2 = also grip_style = grip (1/2) is ignored in this case
+		2 = (standardthemes-default)
+- cleaned-up the non-removed bits of a previous implementation of button_style
+- theme: set button_style to 0 on combos/comboboxentries/spinbuttons
+- added a dark theme (TerraNova-Midnight, with Matrix colorscheme)
+- major update of the schema file
+
+0.20:
+
+- fix border of is-default buttons
+- new default colorscheme (Quicksilver)
+- invert buttons/comboboxes on prelight
+- invert active togglebuttons
+- invert selected cells in treeviews
+- make border of inactive buttons/comboboxes darker
+- make bottom focus-border of entries the same height than the top one
+- increase the size of the random claws
+- increase the amount of the random claws
+- set cornes to NONE on scrollbar_trough
+- added indicator_style engine option
+	- what to draw inside the checkbox:
+		0 = check (engine-default/like before)
+		1 = plus
+		2 = cross (standardtheme-default)
+- added trough_style engine option
+	- what kind of scrollbartrough to have:
+		0 = smooth gradient (default/like before)
+		1 = sharp gradient
+- draw inconsistent indicators 50% darker
+- generally more degrated metallic/sharper look
+
+0.10:
+
+- based on excelsior-clarius-4.2.0+090411
+- added shadow to buttons
+- added grip dots to slider buttons
+- make selected cells not change the color if focus is lost
+- make general widget gradient sharper
+- make selected cell gradient sharper
+- make entry borders sharper
+- make inactive buttons/entries a bit darker
+- customize drawing of unselected cells
+- customize drawing of calendar widget header [!GtkArrow!]
+- ignore grip_style option for slider buttons
+- removed pellucid_scales option
+- removed gummy menubar option
+- removed gummy toolbar option
+- removed straight tooltip_style option
+- removed plain scrollbarstyle option
+- removed plain progbar_style option
+- removed borders around gtktreeview cells
+- removed useless code in terranova_draw_progressbar_fill()
+- removed handle lines on slider buttons
+- small fix in terranova_draw_slider_button():
+	center vertical slider buttons on the scale
+
+CHANGES BETWEEN EXCELSIOR 4.1 and 4.2+090411:
+
+- fixed 5 implicit declarations
+- make Makefile recognize $DEVELOPMENT_CFLAGS
+- replace 08/15 INSTALL by custom one
+- update my mailaddress in AUTHORS
+- renamed *draw_circles to *draw_bubbles
+- renamed *draw_random_circles to *draw_random_bubbles
+- renamed *draw_stripes to *draw_claws
+- renamed *draw_random_stripes to *draw_random_claws
+- make draw_random_claws and draw_random_bubbles style_functions
+- so that they are not beeing shipped in all 5 styles
+- bump gtk+ requirement to 2.12
+- removed --enable-animation configure-flag (forced)
+- removed --disable-deprecated configure-flag (forced)
+- removed --enable-development configure-flag (removed)
+- removed --enable-widget_checks configure-flag (forced)
+- removed --enable-paranoia configure-flag (forced, but without -pedantic)
+- reworked configure's ending message
+- removed deprecated GtkClist and GtkProgress code
+- moved all themes into themes/ subdir

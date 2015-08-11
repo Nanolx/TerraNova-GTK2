@@ -1,0 +1,31 @@
+A) Not building a debian package
+
+first check dependencies:
+
+./configure --prefix=/usr
+
+once everything is fine, compile the engine:
+
+make
+
+at last, install the engine and the themes:
+
+su -c "make install"
+-or-
+sudo make install
+
+B) Building a debian package
+
+first make sure the necessary stuff is installed:
+
+apt-get install dpkg-dev dh_make libgtk2.0-dev autotools-dev gcc fakeroot debhelper
+
+now try building the package:
+
+dpkg-buildpackage -rfakeroot
+
+if built fine, install it:
+
+su -c "dpkg -i ../gtk2-engines-terranova*.deb"
+-or-
+sudo dpkg -i ../gtk2-engines-terranova*.deb
