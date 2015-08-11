@@ -1,9 +1,9 @@
 Source: gtk2-engines-terranova
-Section: NANO
+Section: x11
 Priority: extra
-Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
-Build-Depends: debhelper (>= 5), autotools-dev
-Standards-Version: 3.7.2
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 5), autotools-dev, make, gcc
+Standards-Version: 3.9.4
 
 Package: gtk2-engines-terranova
 Architecture: any

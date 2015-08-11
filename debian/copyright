@@ -1,34 +1,24 @@
-This package was debianized by Christopher Roy Bratusek <zanghar@freenet.de> on
-Fri, 28 Mar 2008 18:13:41 +0100.
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: TerraNova
+Upstream-Contact: Christopher Roy Bratusek <nano@jpberlin.de>
+Source: http://www.nanolx.org/
 
-It was downloaded from <http://www.nanolx.org/terranova>
-
-Upstream Author(s): 
-
-    Christopher Roy Bratusek <zanghar@freenet.de>
-
-Copyright: 
-
-    Copyright (C) 2007 - 2009 Christohper Roy Bratusek <zanghar@freenet.de>
-
-License for the code:
-
+Files: *
+Copyright: 2007-2015 Christopher Roy Bratusek <nano@jpberlin.de>
+License: GPL-3
     This package is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation; either version 3 of the License, or
     (at your option) any later version.
- 
+    .
     This package is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
- 
+    .
     You should have received a copy of the GNU General Public License
     along with this package; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-
-On Debian systems, the complete text of the GNU General
-Public License can be found in `/usr/share/common-licenses/GPL'.
-
-The Debian packaging is (C) 2007 - 2009, Christopher Roy Bratusek <zanghar@freenet.de> and
-is licensed under the GPL, see above.
+    .
+    On Debian systems, the full text of the GNU General Public License
+    version 3 can be found in `/usr/share/common-licenses/GPL-3'.
