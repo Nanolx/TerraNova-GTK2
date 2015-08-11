@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2006 Kulyk Nazar <schamane@myeburg.net>
  * Copyright (C) 2006 Benjamin Berg <benjamin@sipsolutions.net>
- * Copyright (C) 2008 Christopher Bratusek <zanghar@freenet.de>
+ * Copyright (C) 2008 Christopher Bratusek <nano@jpberlin.de>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
